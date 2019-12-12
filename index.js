@@ -47,8 +47,20 @@ function total() {
   return cartTotal
 }
 
-function removeFromCart(item) {
+function removeFromCart(item) { // Removes item from cart
   // write your code here
+  var removeItem = cart; // Will set up an initial variable removeItem so that the for loop isn't affected by destructively changing cart.
+  for (var i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item) {
+      removeItem = removeItem.splice(i, 0);
+    }
+  }
+  if (removeItem === cart) {
+    return "That item is not in your cart."
+  } else {
+    cart = removeItem;
+    return cart
+  }
 }
 
 function placeOrder(cardNumber) {
