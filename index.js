@@ -41,7 +41,7 @@ function total() {
   var cartTotal = 0;
   if (cart.length >= 1) { // Automatically returns $0.
     for (var i = 0; i < cart.length; i++) { // Loop over items of cart, and add price.
-      cartTotal = cartTotal + cart[i];
+      cartTotal = cartTotal + cart[i].itemPrice;
     }
   }
   return cartTotal
