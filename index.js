@@ -14,6 +14,7 @@ function addToCart(item) { // Adds an object representing an item added to the c
  // write your code here
  var price = Math.floor(Math.random()*100+1); // Randomly sets "price" of item.
  var newItem = {itemName: item, itemPrice: price}; // Sets newItem.
+ return addToCart.push(newItem)
 }
 
 function viewCart() {
