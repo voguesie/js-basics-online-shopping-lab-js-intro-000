@@ -38,6 +38,12 @@ function viewCart() { // Function that returns a sentence of the contents in the
 
 function total() {
   // write your code here
+  var cartTotal = 0;
+  if (cart.length >= 1) { // Automatically returns $0.
+    for (var i = 0; i < cart.length; i++) { // Loop over items of cart, and add price.
+      cartTotal = cartTotal + cart[i];
+    }
+  }
 }
 
 function removeFromCart(item) {
