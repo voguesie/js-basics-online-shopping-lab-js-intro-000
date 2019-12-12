@@ -17,8 +17,15 @@ function addToCart(item) { // Adds an object representing an item added to the c
  return cart.push({itemName: item, itemPrice: price}), `${item} has been added to your cart.`
 }
 
-function viewCart() {
+function viewCart() { // Function that returns a sentence of the contents in the cart.
   // write your code here
+  var cartStatement = ""; // Variable to build the sentence.
+  if (cart.length = 0) {
+    cartStatement = "Your shopping cart is empty.";
+  }
+  else if (cart.length = 1) {
+    cartStatement = `In your cart, you have ${cart.itemName} at ${cart.itemPrice}.`;
+  }
 }
 
 function total() {
