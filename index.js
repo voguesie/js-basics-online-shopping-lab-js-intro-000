@@ -68,7 +68,7 @@ function removeFromCart(item) { // Removes item from cart
 function placeOrder(cardNumber) { // Accepts cardNumber, gives total price, and empties cart.
   // write your code here
   if (isNaN(cardNumber)) {
-  return "That item is not in your cart."  
+  return "That item is not in your cart."
 } else {
   return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
 }
