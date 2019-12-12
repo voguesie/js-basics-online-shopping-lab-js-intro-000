@@ -44,6 +44,7 @@ function total() {
       cartTotal = cartTotal + cart[i];
     }
   }
+  return cartTotal
 }
 
 function removeFromCart(item) {
