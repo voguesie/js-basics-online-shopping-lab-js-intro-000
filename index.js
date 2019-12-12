@@ -20,15 +20,15 @@ function addToCart(item) { // Adds an object representing an item added to the c
 function viewCart() { // Function that returns a sentence of the contents in the cart.
   // write your code here
   var cartStatement = ""; // Variable to build the sentence.
-  if (cart.length === 0) {
+  if (cart.length === 0) { // If cart is empty.
     cartStatement = "Your shopping cart is empty.";
   }
-  else if (cart.length === 1) {
+  else if (cart.length === 1) { // If there's only one item in the cart.
     cartStatement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
   else {
     cartStatement = "In your cart, you have";
-    for (var i = 0; i < cart.length - 1; i++) {
+    for (var i = 0; i < cart.length - 1; i++) { // If there's more than one item in the cart. We stop the loop short so that we can add the last part of the sentence.
 //      var nextItem = cart[i];
       cartStatement = `${cartStatement} ${cart[i].itemName} at $${cart[i].itemPrice},`;
     }
