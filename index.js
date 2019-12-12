@@ -23,7 +23,7 @@ function viewCart() { // Function that returns a sentence of the contents in the
   if (cart.length === 0) {
     cartStatement = "Your shopping cart is empty.";
   }
-  else if (cart.length = 1) {
+  else if (cart.length === 1) {
     cartStatement = `In your cart, you have ${cart.itemName} at $${cart.itemPrice}.`;
   }
   else {
