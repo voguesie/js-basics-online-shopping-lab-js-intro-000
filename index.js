@@ -29,10 +29,8 @@ function viewCart() { // Function that returns a sentence of the contents in the
   else {
     cartStatement = "In your cart, you have";
     for (var i = 0; i < cart.length - 1; i++) { // If there's more than one item in the cart. We stop the loop short so that we can add the last part of the sentence.
-//      var nextItem = cart[i];
       cartStatement = `${cartStatement} ${cart[i].itemName} at $${cart[i].itemPrice},`;
     }
-//    var lastItem = cart[cart.length-1];
     cartStatement = `${cartStatement} and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
   }
   return cartStatement
