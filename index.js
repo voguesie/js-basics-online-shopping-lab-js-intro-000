@@ -12,8 +12,8 @@ function setCart(c) {
 function addToCart(item) { // Adds an object representing an item added to the card.
                            // The object contains two key:value pairs, one for the item's name, the other for it's price.
  // write your code here
- var price = Math.floor(Math.random()*100+1);
- var newItem = {itemName: item, itemPrice: price};
+ var price = Math.floor(Math.random()*100+1); // Randomly sets "price" of item.
+ var newItem = {itemName: item, itemPrice: price}; // Sets newItem.
 }
 
 function viewCart() {
