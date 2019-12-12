@@ -52,7 +52,7 @@ function removeFromCart(item) { // Removes item from cart
   var removeItem = cart; // Will set up an initial variable removeItem so that the for loop isn't affected by destructively changing cart.
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      removeItem = removeItem.splice(i, 0);
+      removeItem = removeItem.splice(i, 1);
     }
   }
   if (removeItem === cart) {
