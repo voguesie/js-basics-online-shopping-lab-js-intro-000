@@ -35,6 +35,7 @@ function viewCart() { // Function that returns a sentence of the contents in the
     var lastItem = cart[cart.length-1];
     cartStatement = `${cartStatement} and ${lastItem.itemName} at $${lastItem.itemPrice}.`
   }
+  return cartStatement
 }
 
 function total() {
