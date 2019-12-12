@@ -24,16 +24,16 @@ function viewCart() { // Function that returns a sentence of the contents in the
     cartStatement = "Your shopping cart is empty.";
   }
   else if (cart.length = 1) {
-    cartStatement = `In your cart, you have ${cart.itemName} at ${cart.itemPrice}.`;
+    cartStatement = `In your cart, you have ${cart.itemName} at $${cart.itemPrice}.`;
   }
   else {
     cartStatement = "In your cart, you have";
     for (var i = 0; i < cart.length - 1; i++) {
       var nextItem = cart[i];
-      cartStatement = `${cartStatement} ${nextItem.itemName} at ${nextItem.itemPrice},`;
+      cartStatement = `${cartStatement} ${nextItem.itemName} at $${nextItem.itemPrice},`;
     }
     var lastItem = cart[cart.length-1];
-    cartStatement = `${cartStatement} and ${lastItem.itemName} at ${lastItem.itemPrice}.`
+    cartStatement = `${cartStatement} and ${lastItem.itemName} at $${lastItem.itemPrice}.`
   }
 }
 
