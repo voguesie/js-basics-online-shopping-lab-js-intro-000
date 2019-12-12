@@ -20,7 +20,7 @@ function addToCart(item) { // Adds an object representing an item added to the c
 function viewCart() { // Function that returns a sentence of the contents in the cart.
   // write your code here
   var cartStatement = ""; // Variable to build the sentence.
-  if (cart.length = 0) {
+  if (cart.length === 0) {
     cartStatement = "Your shopping cart is empty.";
   }
   else if (cart.length = 1) {
