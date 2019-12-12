@@ -53,7 +53,7 @@ function removeFromCart(item) { // Removes item from cart
   if (cart.length > 0) {
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      removeItem = removeItem.splice(i, 1);
+      removeItem.splice(i, 1);
     }
   }
 }
