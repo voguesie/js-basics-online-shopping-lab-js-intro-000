@@ -24,7 +24,7 @@ function viewCart() { // Function that returns a sentence of the contents in the
     cartStatement = "Your shopping cart is empty.";
   }
   else if (cart.length === 1) {
-    cartStatement = `In your cart, you have ${cart.itemName} at $${cart.itemPrice}.`;
+    cartStatement = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
   else {
     cartStatement = "In your cart, you have";
